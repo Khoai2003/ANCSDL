@@ -1,0 +1,27 @@
+# requirements.txt
+# ============================================================
+# Cài đặt toàn bộ: pip install -r requirements.txt
+# Python >= 3.9
+# ============================================================
+
+# --- Deep Learning ---
+tensorflow>=2.10.0          # Keras được tích hợp sẵn từ tf 2.x
+                            # (Windows native không hỗ trợ GPU từ tf >= 2.11)
+
+# --- NLP / Word Embedding ---
+gensim>=4.2.0               # Word2Vec CBOW
+
+# --- Data & Machine Learning ---
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.1.0         # train_test_split, metrics
+
+# --- Visualization ---
+matplotlib>=3.6.0           # Vẽ biểu đồ
+seaborn>=0.12.0             # Heatmap confusion matrix
+
+# --- Web Demo ---
+streamlit>=1.22.0           # Giao diện web demo
+
+# --- Utilities ---
+tqdm>=4.64.0                # Thanh tiến trình (tuỳ chọn)
