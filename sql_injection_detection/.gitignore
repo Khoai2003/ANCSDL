@@ -1,0 +1,55 @@
+# ============================================================
+# .gitignore – SQL Injection Detection Project
+# ============================================================
+
+# --- Dữ liệu (KHÔNG push lên Git – file nặng) ---
+data/raw/
+data/processed/*.npy
+data/processed/*.csv
+data/test_samples/
+
+# --- Models (KHÔNG push – file nặng hàng trăm MB) ---
+models/
+!models/.gitkeep
+
+# --- TensorBoard logs ---
+logs/
+
+# --- Python cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# --- Virtual environment ---
+venv/
+env/
+.env/
+.venv/
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Streamlit cache ---
+.streamlit/
+
+# --- Misc ---
+*.log
+*.tmp
+*.bak
+dist/
+build/
+*.egg-info/
