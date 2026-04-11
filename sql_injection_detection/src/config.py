@@ -10,9 +10,11 @@ LEARNING_RATE = 0.001
 MAX_SEQUENCE_LENGTH = 100  # Độ dài tối đa của câu lệnh SQL (số token)
 
 # --- Paths ---
-MODEL_SAVE_PATH = "../models/"
-DATA_PATH = "../data/processed/"
-LOG_PATH = "../logs/tensorboard/"
+import os
+_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_SAVE_PATH = os.path.join(_BASE_DIR, "models/")
+DATA_PATH = os.path.join(_BASE_DIR, "data/processed/")
+LOG_PATH = os.path.join(_BASE_DIR, "logs/tensorboard/")
 
 # --- Model ---
 NUM_CLASSES = 2            # 0: Normal, 1: SQL Injection
